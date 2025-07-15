@@ -54,21 +54,16 @@ function ISTearingClothing:perform()
     local item = self.item
     item:setJobDelta(0.0)
 
-    -- either we come from clothingrecipesdefinitions or we simply check number of covered parts by the clothing and add
     local materials = nil
     local nbrOfCoveredParts = nil
-    -- local maxTime = 0 -- TODO: possibly allow recipe to call Lua function to get maxTime for actions
     if ClothingRecipesDefinitions[item:getType()] then
         local recipe = ClothingRecipesDefinitions[item:getType()]
         materials = luautils.split(recipe.materials, ":");
-        -- maxTime = tonumber(materials[2]) * 20;
     elseif ClothingRecipesDefinitions["FabricType"][item:getFabricType()] then
         materials = {};
         materials[1] = ClothingRecipesDefinitions["FabricType"][item:getFabricType()].material;
         -- we change this so the number of holes etc impact the yield
         nbrOfCoveredParts = item:getNbrOfCoveredParts() - (item:getHolesNumber() + item:getPatchesNumber());
-        --         nbrOfCoveredParts = item:getNbrOfCoveredParts();
-        --         character:Say("Parts 1 " .. tostring(nbrOfCoveredParts))
         if nbrOfCoveredParts == 0 then nbrOfCoveredParts = 1 end
         local minMaterial = 2;
         local maxMaterial = nbrOfCoveredParts;
@@ -80,7 +75,6 @@ function ISTearingClothing:perform()
         nbr = nbr + (character:getPerkLevel(Perks.Tailoring) / 2);
         if nbr > nbrOfCoveredParts then nbr = nbrOfCoveredParts end
         materials[2] = nbr;
-        --         character:Say("Parts 2 " .. tostring(nbr))
 
         self.maxTime = nbrOfCoveredParts * 20;
     else
@@ -105,8 +99,8 @@ function ISTearingClothing:perform()
 
     -- add thread and xp back
     -- add thread sometimes, depending on tailoring level
-    -- local recieveThread = SandboxVars.TearAllClothing.ReceiveThread
-    if ZombRand(7) < character:getPerkLevel(Perks.Tailoring) then
+    local receiveThread = SandboxVars.TearAllClothing.ReceiveThread
+    if (ZombRand(7) < character:getPerkLevel(Perks.Tailoring)) and receiveThread then
         local max = 4;
         if nbrOfCoveredParts then
             max = nbrOfCoveredParts;
@@ -121,7 +115,8 @@ function ISTearingClothing:perform()
         end
         character:getInventory():AddItem(thread);
     end
-    character:getXp():AddXP(Perks.Tailoring, 1);
+    local xpAmount = SandboxVars.TearAllClothing.TailoringXP
+    character:getXp():AddXP(Perks.Tailoring, xpAmount);
 
     if item:hasTag("Buckles") then
         character:getInventory():AddItems("Base.Buckle", 2)

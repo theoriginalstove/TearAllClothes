@@ -65,7 +65,8 @@ function Recipe.OnCreate.RipClothing(craftRecipeData, character)
     -- add thread and xp back
 
     -- add thread sometimes, depending on tailoring level
-    if ZombRand(7) < character:getPerkLevel(Perks.Tailoring) + 1 then
+    local receiveThread = SandboxVars.TearAllClothing.ReceiveThread
+    if (ZombRand(7) < character:getPerkLevel(Perks.Tailoring)) and receiveThread then
         local max = 4;
         if nbrOfCoveredParts then
             max = nbrOfCoveredParts;
@@ -80,7 +81,8 @@ function Recipe.OnCreate.RipClothing(craftRecipeData, character)
         end
         character:getInventory():AddItem(thread);
     end
-    character:getXp():AddXP(Perks.Tailoring, 1);
+    local xpAmount = SandboxVars.TearAllClothing.TailoringXP
+    character:getXp():AddXP(Perks.Tailoring, xpAmount);
 
     if item:hasTag("Buckles") then
         character:getInventory():AddItems("Base.Buckle", 2)

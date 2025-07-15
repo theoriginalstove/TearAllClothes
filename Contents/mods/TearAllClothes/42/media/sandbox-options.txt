@@ -12,7 +12,7 @@ option TearAllClothing.TailoringXP
 option TearAllClothing.ReceiveThread
 {
     type = boolean,
-    default = false,
+    default = true,
     page = TearAllClothing,
     translation = TearAllClothing_ReceiveThread,
 }
