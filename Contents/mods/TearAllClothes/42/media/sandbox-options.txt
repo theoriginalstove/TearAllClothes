@@ -1,0 +1,18 @@
+VERSION = 1,
+option TearAllClothing.TailoringXP
+{
+    type = double,
+    default = 1.0,
+    min = 0,
+    max = 10,
+    page = TearAllClothing,
+    translation = TearAllClothing_TailoringXP,
+}
+
+option TearAllClothing.ReceiveThread
+{
+    type = boolean,
+    default = false,
+    page = TearAllClothing,
+    translation = TearAllClothing_ReceiveThread,
+}

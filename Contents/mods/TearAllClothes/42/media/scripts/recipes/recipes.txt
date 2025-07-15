@@ -1,0 +1,60 @@
+module Base
+{
+	craftRecipe RipClothing
+	{
+        timedAction = RipClothing,
+		Time = 80,
+		Tags = InHandCraft;CanBeDoneInDark;RemoveResultItems,
+		OnCreate = Recipe.OnCreate.RipClothing,
+		/* OnCanPerform = Recipe.OnCanPerform.RipClothing, */
+		Tooltip = Tooltip_Recipe_ClothingNotWorn,
+		/* CanWalk = true, */
+		inputs
+		{
+			item 1 tags[RipClothingCotton] flags[AllowDestroyedItem;IsNotWorn],
+		}
+		outputs
+		{
+			item 1 Base.RippedSheets,
+		}
+	}
+
+    craftRecipe RipDenimClothing
+   	{
+        timedAction = CutClothing,
+  		Time = 125,
+  		Tags = InHandCraft;RemoveResultItems,
+  		OnCreate = Recipe.OnCreate.RipClothing,
+  		inputs
+  		{
+ 			item 1 tags[Scissors;SharpKnife] mode:keep flags[MayDegradeLight;Prop1;IsNotDull],
+ 			item 1 tags[RipClothingDenim;RipClothingLeather] flags[AllowDestroyedItem;IsNotWorn] mappers[fabricType],
+  		}
+		outputs
+		{
+			item 1 mapper:fabricType,
+		}
+		itemMapper fabricType
+		{
+			Base.LeatherStrips = Base.JacketLong_Random,
+			Base.LeatherStrips = Base.JacketLong_Black,
+			Base.LeatherStrips = Base.Jacket_Black,
+			Base.LeatherStrips = Base.Jacket_LeatherWildRacoons,
+			Base.LeatherStrips = Base.Jacket_LeatherIronRodent,
+			Base.LeatherStrips = Base.Jacket_LeatherBarrelDogs,
+			Base.LeatherStrips = Base.Jacket_Leather,
+			Base.LeatherStrips = Base.Jacket_LeatherBlack,
+			Base.LeatherStrips = Base.Jacket_LeatherBrown,
+			Base.LeatherStrips = Base.Belt2,
+			Base.LeatherStrips = Base.TrousersMesh_Leather,
+			Base.LeatherStrips = Base.Trousers_LeatherBlack,
+			Base.LeatherStrips = Base.Shoes_Strapped
+			Base.LeatherStrips = Base.Shoes_CowboyBoots,
+			Base.LeatherStrips = Base.Shoes_CowboyBoots_Brown,
+			Base.LeatherStrips = Base.Shoes_CowboyBoots_Black,
+			Base.LeatherStrips = Base.Shoes_CowboyBoots_Fancy,
+			Base.LeatherStrips = Base.Shoes_CowboyBoots_SnakeSkin
+			default = Base.DenimStrips,
+		}
+	}
+}

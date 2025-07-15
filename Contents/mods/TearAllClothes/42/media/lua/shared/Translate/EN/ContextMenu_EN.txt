@@ -1,0 +1,3 @@
+ContextMenu_EN = {
+	TearAll_RipClothing = "Rip Clothing Dude!",
+}
