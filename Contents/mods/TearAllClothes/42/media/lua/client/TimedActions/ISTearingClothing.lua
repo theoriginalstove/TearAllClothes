@@ -1,6 +1,6 @@
 require "TimedActions/ISBaseTimedAction"
 
-ISTearingClothing = ISBaseTimedAction:derive("ISRipingClothes")
+ISTearingClothing = ISBaseTimedAction:derive("ISTearingClothing")
 
 function ISTearingClothing:isValid()
     if isClient() and self.started then return true end
