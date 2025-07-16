@@ -1,0 +1,5 @@
+Sandbox_CH = {
+    Sandbox_TearAllClothing = "撕破所有衣物",
+    Sandbox_TearAllClothing_ReceiveThread = "获得线",
+    Sandbox_TearAllClothing_TailoringXP = "裁缝经验值数量"
+}

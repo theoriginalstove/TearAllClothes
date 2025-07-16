@@ -74,7 +74,7 @@ local function createRipClothingMenu(player, context, items)
 
     if clothingItemsTotal >= 1 then
         local menuText = "Tear Clothing"
-        local option = context:insertOptionAfter("Grab", menuText)
+        local option = context:insertOptionAfter("Grab", getText("ContextMenu_TearClothingMenu"))
         option.iconTexture = getTexture("media/textures/Item_Jacket_HideDeer.png")
 
         local subMenu = context:getNew(context)

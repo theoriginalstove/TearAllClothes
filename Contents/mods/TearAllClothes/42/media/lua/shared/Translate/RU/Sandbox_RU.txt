@@ -1,0 +1,5 @@
+Sandbox_RU = {
+    Sandbox_TearAllClothing = "Разорвать всю одежду",
+    Sandbox_TearAllClothing_ReceiveThread = "Получить нить",
+    Sandbox_TearAllClothing_TailoringXP = "Количество опыта по пошиву"
+}

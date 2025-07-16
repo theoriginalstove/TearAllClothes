@@ -1,0 +1,5 @@
+Sandbox_NL = {
+    Sandbox_TearAllClothing = "Scheur alle kleding",
+    Sandbox_TearAllClothing_ReceiveThread = "Ontvang draad",
+    Sandbox_TearAllClothing_TailoringXP = "Hoeveelheid naaivaardigheid-XP"
+}

@@ -1,3 +1,5 @@
 ContextMenu_EN = {
-	TearAll_RipClothing = "Rip Clothing Dude!",
+	ContextMenu_TearClothingMenu = "Tear Up Clothing",
+	ContextMenu_TearClothingSurrounding = "Tear All Surrounding Clothing"
+	ContextMenu_TearClothingSelected = "Tear Selected Clothing"
 }

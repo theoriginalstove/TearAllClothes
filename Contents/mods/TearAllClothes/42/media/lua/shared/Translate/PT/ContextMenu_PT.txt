@@ -1,0 +1,5 @@
+ContextMenu_PT = {
+	ContextMenu_TearClothingMenu = "Rasgar roupa",
+	ContextMenu_TearClothingSurrounding = "Rasgar todas as roupas ao redor",
+	ContextMenu_TearClothingSelected = "Rasgar roupa selecionada"
+}

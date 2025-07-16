@@ -1,0 +1,5 @@
+ContextMenu_RU = {
+	ContextMenu_TearClothingMenu = "Разорвать одежду",
+	ContextMenu_TearClothingSurrounding = "Разорвать всю окружающую одежду",
+	ContextMenu_TearClothingSelected = "Разорвать выбранную одежду"
+}

@@ -1,0 +1,5 @@
+ContextMenu_NL = {
+	ContextMenu_TearClothingMenu = "Kleding scheuren",
+	ContextMenu_TearClothingSurrounding = "Scheur alle omringende kleding",
+	ContextMenu_TearClothingSelected = "Scheur geselecteerde kleding"
+}

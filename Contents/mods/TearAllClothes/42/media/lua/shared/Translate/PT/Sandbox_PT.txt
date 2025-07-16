@@ -1,0 +1,5 @@
+Sandbox_PT = {
+    Sandbox_TearAllClothing = "Rasgar toda a roupa",
+    Sandbox_TearAllClothing_ReceiveThread = "Receber linha",
+    Sandbox_TearAllClothing_TailoringXP = "Quantidade de XP de costura"
+}

@@ -1,0 +1,5 @@
+Sandbox_DA = {
+    Sandbox_TearAllClothing = "Riv alt tøj i stykker",
+    Sandbox_TearAllClothing_ReceiveThread = "Modtag tråd",
+    Sandbox_TearAllClothing_TailoringXP = "Mængde skrædder-XP"
+}
