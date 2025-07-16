@@ -13,8 +13,8 @@ description=[*]Receive thread and Tailoring XP from tearing up clothing.
 description=[*]Sandbox Options to enable/disable tailoring XP and receiving thread from ripping clothing.
 description=[/list]
 description=
-description=[h2]If any of the translations could be better, please leave them in the translation discussion or open up a github issue.[/h2]
-description=Github link: 
+description=[h2]If any of the translations could be better, please leave them in the translation discussion or open up a github issue, or make a PR on Github with the correct translation.[/h2]
+description=[url=github.com/theoriginalstove/TearAllClothes]Github github.com/theoriginalstove/TearAllClothes[/url]
 description=
 description=[h2]TODOs[/h2]
 description=[list]
