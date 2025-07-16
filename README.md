@@ -3,7 +3,7 @@ Made for Build 42
 
 ## Contributing:
 Fill out bug reports through a Github issue or add to the discussion in the Steam workshop page for the mod:
-(TearAllClothes Workshop Page)[https://steamcommunity.com/sharedfiles/filedetails/?id=3519629457]
+[TearAllClothes Workshop Page](https://steamcommunity.com/sharedfiles/filedetails/?id=3519629457)
 
 ## License:
 Shield: [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
