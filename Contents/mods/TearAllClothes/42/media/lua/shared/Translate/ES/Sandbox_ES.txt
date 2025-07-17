@@ -2,4 +2,5 @@ Sandbox_ES = {
     Sandbox_TearAllClothing = "Rasgar toda la ropa",
     Sandbox_TearAllClothing_ReceiveThread = "Recibir hilo",
     Sandbox_TearAllClothing_TailoringXP = "Cantidad de XP en sastrería"
+    Sandbox_TearAllClothing_MaxThread = "Hilo Máximo"
 }

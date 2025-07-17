@@ -2,4 +2,5 @@ Sandbox_UA = {
     Sandbox_TearAllClothing = "Розірвати весь одяг",
     Sandbox_TearAllClothing_ReceiveThread = "Отримати нитку",
     Sandbox_TearAllClothing_TailoringXP = "Кількість досвіду кравецтва"
+    Sandbox_TearAllClothing_MaxThread = "Макс. Нитка"
 }

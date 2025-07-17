@@ -2,4 +2,5 @@ Sandbox_EN = {
     Sandbox_TearAllClothing = "Tear All Clothing"
     Sandbox_TearAllClothing_ReceiveThread = "Recieve Thread"
     Sandbox_TearAllClothing_TailoringXP = "Tailoring XP Amount"
+    Sandbox_TearAllClothing_MaxThread = "Max Thread"
 }
