@@ -1,5 +1,6 @@
 ContextMenu_CH = {
 	ContextMenu_TearClothingMenu = "撕破衣物",
 	ContextMenu_TearClothingSurrounding = "撕破周围所有衣物",
-	ContextMenu_TearClothingSelected = "撕破选中的衣物"
+	ContextMenu_TearClothingSelected = "撕破选中的衣物",
+	ContextMenu_TearClothingAll = "撕破所有衣物"
 }

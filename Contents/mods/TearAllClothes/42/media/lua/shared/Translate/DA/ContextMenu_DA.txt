@@ -1,5 +1,6 @@
 ContextMenu_DA = {
 	ContextMenu_TearClothingMenu = "Riv tøj i stykker",
 	ContextMenu_TearClothingSurrounding = "Riv alt omkringliggende tøj i stykker",
-	ContextMenu_TearClothingSelected = "Riv valgte tøj i stykker"
+	ContextMenu_TearClothingSelected = "Riv valgte tøj i stykker",
+	ContextMenu_TearClothingAll = "Riv alt tøj i stykker"
 }
