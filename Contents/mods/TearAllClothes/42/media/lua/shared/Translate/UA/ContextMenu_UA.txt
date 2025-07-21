@@ -1,6 +1,7 @@
 ContextMenu_UA = {
     ContextMenu_TearClothingMenu = "Розірвати одяг",
-    ContextMenu_TearClothingSurrounding = "Розірвати весь навколишній одяг",
+    ContextMenu_TearClothingSurrounding = "Розірвати одяг у навколишньому середовищі",
+    ContextMenu_TearClothingSurroundingBackpacks = "Розірвати одяг у рюкзаках та навколо",
     ContextMenu_TearClothingSelected = "Розірвати вибраний одяг",
     ContextMenu_TearClothingAll = "Розірвати весь одяг"
 }

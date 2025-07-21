@@ -49,6 +49,7 @@ end
 
 function ISTearingClothing:perform()
     self:stopSound()
+    
 
     local character = self.character
     local item = self.item
@@ -127,7 +128,7 @@ function ISTearingClothing:perform()
     end
 
     if item:hasTag("Wire") and (ZombRand(0, 10) < 5) then
-        character:getInventory():AddItems("Base.Wire")
+        character:getInventory():AddItem("Base.Wire")
     end
 
     self.character:getInventory():Remove(self.item)
@@ -143,10 +144,10 @@ function ISTearingClothing:new(character, item)
     -- o.transactionId = 0
 
     if character:isTimedActionInstant() then
-        o.maxTime = -1
+        o.maxTime = 1
     end
     if isClient() then
-        o.maxTime = -1
+        o.maxTime = 1
     end
     return o
 end

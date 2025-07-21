@@ -1,6 +1,7 @@
 ContextMenu_NL = {
 	ContextMenu_TearClothingMenu = "Kleding scheuren",
-	ContextMenu_TearClothingSurrounding = "Scheur alle omringende kleding",
+	ContextMenu_TearClothingSurrounding = "Scheur kleding in de omgeving",
+	ContextMenu_TearClothingSurroundingBackpacks = "Scheur kleding in rugzakken en omgeving",
 	ContextMenu_TearClothingSelected = "Scheur geselecteerde kleding",
 	ContextMenu_TearClothingAll = "Scheur alle kleding"
 }

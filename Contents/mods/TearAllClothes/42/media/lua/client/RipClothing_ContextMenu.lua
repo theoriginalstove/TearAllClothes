@@ -3,14 +3,14 @@ require "ISUI/ISInventoryPaneContextMenu"
 -- check to see
 local function skipInventoryItem(playerObj, container, skipInventory)
     local playerInv = playerObj:getInventory()
-    if (skipInventory) and (container == playerInv) then 
+    if (skipInventory) and (container == playerInv or container:isInCharacterInventory(playerObj)) then
         print("Skipping inventory item")  -- for debugging
         return true
     end
     return false
 end
 
-local function getAllClothingItems(playerObj, skipInventory)
+local function getAllClothingItems(playerObj, skipInventory, skipInventoryContainers)
     local clothingItems = {}
     local containers = ISInventoryPaneContextMenu.getContainers(playerObj)
     for i = 0, containers:size()-1 do
@@ -20,7 +20,8 @@ local function getAllClothingItems(playerObj, skipInventory)
             local item = containerItems:get(j)
             if (instanceof(item, "Clothing") and item:getFabricType()) and
                 not (playerObj:isEquipped(item) or item:isFavorite()) and
-                not skipInventoryItem(playerObj, container, skipInventory) then
+                not (skipInventoryItem(playerObj, container, skipInventory) and container:isInCharacterInventory(playerObj))
+                then
                     table.insert(clothingItems, item)
             end
         end
@@ -102,9 +103,9 @@ local function createRipClothingMenu(player, context, items)
         local selectedOption = subMenu:addOption(getText("ContextMenu_TearClothingSelected"), playerObj, tearSelectedClothing,
             selectedClothingItems)
         selectedOption.iconTexture = getTexture("media/textures/target.png")
-        local surroundingOption = subMenu:addOption(getText("ContextMenu_TearClothingSurrounding"), playerObj, tearClothing, true)
+        local surroundingOption = subMenu:addOption(getText("ContextMenu_TearClothingSurrounding"), playerObj, tearClothing, true, true)
         surroundingOption.iconTexture = getTexture("media/textures/radar.png")
-        local allOption = subMenu:addOption(getText("ContextMenu_TearClothingAll"), playerObj, tearClothing, false)
+        local allOption = subMenu:addOption(getText("ContextMenu_TearClothingAll"), playerObj, tearClothing, false, false)
         allOption.iconTexture = getTexture("media/textures/globe.png")
     end
 end

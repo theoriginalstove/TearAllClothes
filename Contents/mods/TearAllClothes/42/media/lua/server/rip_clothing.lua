@@ -93,6 +93,6 @@ function Recipe.OnCreate.RipClothing(craftRecipeData, character)
     end
 
     if item:hasTag("Wire") and (ZombRand(0, 10) < 5) then
-        character:getInventory():AddItems("Base.Wire")
+        character:getInventory():AddItem("Base.Wire")
     end
 end

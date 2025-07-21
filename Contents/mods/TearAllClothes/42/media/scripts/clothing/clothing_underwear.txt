@@ -554,17 +554,8 @@ module Base
 	
 	item Bra_Straps_FrillyRed
 	{
-		DisplayName = Bra,
-		DisplayCategory = Clothing,
-		Type = Clothing,
-		Weight = 0.2,
-		Icon = BraRedsilky,
-		BodyLocation = UnderwearTop,
-		CanHaveHoles = FALSE,
         FabricType = Cotton,
-		ClothingItem = Underwear_FrillyBra_Straps_Red,
-		WorldStaticModel = Bra_FrillyRed_Ground,
-		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity;Wire,
+		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity;Wire;RipClothingCotton,
 	}
 	
 	item Bra_Strapless_FrillyRed
@@ -641,4 +632,109 @@ module Base
 		FabricType = Cotton,
 		Tags = IgnoreZombieDensity,
 	}
+	
+	item Bra_Strapless_Hide
+	{
+		DisplayName = Bra - Strapless Hide,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BraLeopardStrapless,
+		BodyLocation = UnderwearTop,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Bra_Strapless_Hide,
+		WorldStaticModel = BraStraplessAnimalPrint_Ground,
+		FabricType = Leather,
+		Tags = RipClothingLeather,
+	}
+
+	item Bra_Straps_Hide
+	{
+		DisplayName = Bra - Hide,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BraLeopard,
+		BodyLocation = UnderwearTop,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Bra_Straps_Hide,
+		WorldStaticModel = Bra_AnimalPrint_Ground,
+		FabricType = Leather,
+		Tags = RipClothingLeather,
+	}
+
+	item Underpants_Hide
+	{
+		DisplayName = Underpants - Hide,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = PantiesLeopard,
+		BodyLocation = UnderwearBottom,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Underpants_Hide,
+		WorldStaticModel = Underpants_AnimalPrint_Ground,
+		FabricType = Leather,
+		BloodLocation = Groin,
+		ScratchDefense = 10,
+		Tags = RipClothingLeather,
+	}
+
+		item Wallet
+	{
+		DisplayName = Wallet,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.2,
+		IconsForTexture = Wallet_01;Wallet_02;Wallet_03;Wallet_04,
+	    WorldStaticModelsByIndex	= Wallet;Wallet2;Wallet3;Wallet4,
+		Capacity = 1,
+		CloseSound = CloseWallet,
+		OpenSound = OpenWallet,
+		PutInSound = StoreItemWallet,
+        AcceptItemFunction = AcceptItemFunction.Wallet,
+        Tags = BagsFillException;RipClothingLeather,
+		FabricType = Leather,
+		MaxItemSize = 0.2,
+        ResearchableRecipes = SewHideWallet,
+	}
+
+	item Wallet_Female
+	{
+		DisplayName = Wallet,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.2,
+		IconsForTexture = Wallet_01;Wallet_02;Wallet_03;Wallet_04,
+	    WorldStaticModelsByIndex	= Wallet;Wallet2;Wallet3;Wallet4,
+		Capacity = 1,
+		CloseSound = CloseWallet,
+		OpenSound = OpenWallet,
+		PutInSound = StoreItemWallet,
+        AcceptItemFunction = AcceptItemFunction.Wallet,
+        Tags = BagsFillException;RipClothingLeather,
+		FabricType = Leather,
+		MaxItemSize = 0.2,
+        ResearchableRecipes = SewHideWallet,
+	}
+
+	item Wallet_Male
+	{
+		DisplayName = Wallet,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.2,
+		IconsForTexture = Wallet_01;Wallet_03;Wallet_04,
+	    WorldStaticModelsByIndex	= Wallet;Wallet3;Wallet4,
+		Capacity = 1,
+		CloseSound = CloseWallet,
+		OpenSound = OpenWallet,
+		PutInSound = StoreItemWallet,
+        AcceptItemFunction = AcceptItemFunction.Wallet,
+        Tags = BagsFillException;RipClothingLeather,
+		FabricType = Leather,
+		MaxItemSize = 0.2,
+        ResearchableRecipes = SewHideWallet,
+	}
+
 }
