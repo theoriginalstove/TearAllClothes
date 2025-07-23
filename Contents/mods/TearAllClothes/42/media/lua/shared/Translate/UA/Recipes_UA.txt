@@ -1,0 +1,3 @@
+Recipe_UA = {
+    SewSheetFromRags = "Зшити простирадло з ганчір'я"
+}

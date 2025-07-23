@@ -1,0 +1,3 @@
+Recipe_ES = {
+    SewSheetFromRags = "Coser sábana de trapos"
+}

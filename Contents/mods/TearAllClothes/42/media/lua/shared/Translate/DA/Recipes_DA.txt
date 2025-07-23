@@ -1,0 +1,3 @@
+Recipe_DA = {
+    SewSheetFromRags = "Sy lagen fra klude"
+}

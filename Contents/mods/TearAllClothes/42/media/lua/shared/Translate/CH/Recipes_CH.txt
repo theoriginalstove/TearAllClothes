@@ -1,0 +1,3 @@
+Recipe_CH = {
+    SewSheetFromRags = "用破布缝制床单"
+}

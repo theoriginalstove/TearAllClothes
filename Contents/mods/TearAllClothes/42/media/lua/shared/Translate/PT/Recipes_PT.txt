@@ -1,0 +1,3 @@
+Recipe_PT = {
+    SewSheetFromRags = "Costurar lençol de trapos"
+}

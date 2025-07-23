@@ -1,0 +1,25 @@
+module TearClothing
+{
+    imports {
+        Base
+    }    
+
+    craftRecipe SewSheetFromRags
+    {
+        Tags = AnySurfaceCraft,
+        Time = 150,
+        Category = Tailoring,
+        TimedAction = SewingCloth,
+        inputs 
+        {
+			item 1 tags[Scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+            item 6 [Base.RippedSheets] mode:destroy,
+            item 1 tags[Thread],
+        }
+        outputs
+        {
+            item 1 Base.Sheet,
+        }
+    }
+}

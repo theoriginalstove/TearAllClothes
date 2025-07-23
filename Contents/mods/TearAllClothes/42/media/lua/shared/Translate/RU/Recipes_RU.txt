@@ -1,0 +1,3 @@
+Recipe_RU = {
+    SewSheetFromRags = "Сшить простыню из тряпок"
+}
